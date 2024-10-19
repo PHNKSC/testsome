@@ -1,0 +1,300 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 19 | Scripts: 4 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0.32746, 0, 0.20279, 0);
+G2L["2"]["Position"] = UDim2.new(0.04842, 0, 0.28019, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Size"] = UDim2.new(0.94063, 0, 0.28752, 0);
+G2L["3"]["Position"] = UDim2.new(0.02925, 0, 0.65192, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[SLIDER🔰FUNCTION🔰]];
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.LocalScript
+G2L["4"] = Instance.new("LocalScript", G2L["3"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.pros
+G2L["5"] = Instance.new("Frame", G2L["3"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(0, 243, 255);
+G2L["5"]["Size"] = UDim2.new(0.36027, 0, 1, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Name"] = [[pros]];
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.pros.UICorner
+G2L["6"] = Instance.new("UICorner", G2L["5"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.pros.UIGradient
+G2L["7"] = Instance.new("UIGradient", G2L["5"]);
+G2L["7"]["Offset"] = Vector2.new(0, 10);
+G2L["7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 5, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 255, 255))};
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.pros.UIGradient.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.checkk
+G2L["9"] = Instance.new("TextButton", G2L["3"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["TextStrokeTransparency"] = 0;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Name"] = [[checkk]];
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[]];
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.Value
+G2L["a"] = Instance.new("IntValue", G2L["3"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.process
+G2L["b"] = Instance.new("TextLabel", G2L["3"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["TextStrokeTransparency"] = 0.95;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Size"] = UDim2.new(0.37477, 0, 1, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[LOADING FUNCTION NAME...]];
+G2L["b"]["Name"] = [[process]];
+G2L["b"]["Position"] = UDim2.new(0, 0, -0.01343, 0);
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.process.UIStroke
+G2L["c"] = Instance.new("UIStroke", G2L["b"]);
+G2L["c"]["Thickness"] = 1.6;
+G2L["c"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.process.UIStroke.UIGradient
+G2L["d"] = Instance.new("UIGradient", G2L["c"]);
+G2L["d"]["Offset"] = Vector2.new(0, 5);
+G2L["d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 5, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 255, 255))};
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.process.UIStroke.UIGradient.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["3"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.UIStroke
+G2L["10"] = Instance.new("UIStroke", G2L["3"]);
+G2L["10"]["Thickness"] = 2.4;
+G2L["10"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.Frame.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.UIStroke
+G2L["12"] = Instance.new("UIStroke", G2L["2"]);
+G2L["12"]["Thickness"] = 2.4;
+G2L["12"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.Frame.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.LocalScript
+local function C_4()
+local script = G2L["4"];
+	--[[
+	
+	--save พัง****
+	
+	
+	
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local sliderz = script.Parent
+	
+	function UPDslider()
+		local output = (Vector2.new(mouse.X,mouse.Y)-sliderz.AbsolutePosition)/sliderz.AbsoluteSize
+		
+		print(output)
+		
+	end
+	
+	
+	]]
+	
+	
+	
+	
+	
+	
+	
+	--แก้ละ
+	local title = script.Parent.process
+	
+	
+	title.Text = "ROTATE HEAD : 0"
+	
+	local mo = game.Players.LocalPlayer:GetMouse()
+	local sder = script.Parent
+	local trigger = script.Parent.checkk
+	local pzo = script.Parent.pros
+	local val = script.Parent.Value
+	
+	
+	local nubss = 0
+	
+	
+	pzo.Size = UDim2.fromScale(val.Value,1)
+	--title.Text = tostring(math.round(val.Value*100))
+	
+	
+	
+	
+	local TweenService = game:GetService("TweenService")
+	local tweenstyle = TweenInfo.new(0.5,Enum.EasingStyle.Elastic)
+	
+	
+	
+	function UpdateSlider()
+		local output = math.clamp((mo.X-sder.AbsolutePosition.X)/sder.AbsoluteSize.X,0,1)
+		
+		title.Text = "ROTATE HEAD : " .. tostring(math.round(output*100))
+		val.Value = output
+		
+		--///////////////////////////
+		--FUNCTION HERE
+		--VALUE USE > output * number
+		
+		
+	--	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = output * 100
+		
+		
+		nubss = output * 100
+		
+		local args = {
+			[1] = "Head",
+			[2] = CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.7376635074615479, -0.675168514251709, 0, 0.675168514251709, nubss)
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("PoseEditorDependencies"):WaitForChild("ChangeTransformationForPart"):FireServer(unpack(args))
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		--FUNCTION HERE
+		--\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+		if val.Value ~= output then
+			TweenService:Create(pzo,tweenstyle,{Size = UDim2.fromScale(output,1)}):Play()
+		end
+		
+		
+	end
+	
+	local Slider = false
+	
+	function ActivateSlider()
+		Slider = true
+		while Slider do
+			UpdateSlider()
+			task.wait()
+		end
+	end
+	
+	trigger.MouseButton1Down:Connect(ActivateSlider)
+	
+	game:GetService("UserInputService").InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Slider = false
+			
+		end
+	end)
+	
+	
+end;
+task.spawn(C_4);
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.pros.UIGradient.LocalScript
+local function C_8()
+local script = G2L["8"];
+	while true do
+		wait()
+		script.Parent.Rotation += 5
+	end
+end;
+task.spawn(C_8);
+-- StarterGui.ScreenGui.Frame.SLIDER🔰FUNCTION🔰.process.UIStroke.UIGradient.LocalScript
+local function C_e()
+local script = G2L["e"];
+	while true do
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_e);
+-- StarterGui.ScreenGui.Frame.LocalScript
+local function C_13()
+local script = G2L["13"];
+	local g = script.Parent
+	
+	g.Active = true
+	g.Draggable = true
+end;
+task.spawn(C_13);
+
+return G2L["1"], require;
