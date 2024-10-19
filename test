@@ -207,7 +207,7 @@ local script = G2L["4"];
 	function UpdateSlider()
 		local output = math.clamp((mo.X-sder.AbsolutePosition.X)/sder.AbsoluteSize.X,0,1)
 		
-		title.Text = "ROTATE HEAD : " .. tostring(math.round(output*10000))
+		title.Text = "ROTATE HEAD : " .. tostring(math.round(output*-1000))
 		val.Value = output
 		
 		--///////////////////////////
@@ -218,7 +218,7 @@ local script = G2L["4"];
 	--	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = output * 100
 		
 		
-		nubss = output * 10000
+		nubss = output * -1000
 		
 		local args = {
 			[1] = "Head",
